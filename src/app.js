@@ -1,0 +1,9 @@
+import 'regenerator-runtime';
+import './script/main.js';
+import './component/loading.js';
+import './component/hourly-component.js';
+import './component/daily-component.js';
+import './component/detail-component.js';
+import './style/main.css';
+import './style/weather-icons.min.css';
+import './../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
