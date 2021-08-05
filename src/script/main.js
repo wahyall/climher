@@ -90,7 +90,7 @@ function setSelectedCity(city, country) {
 }
 
 function getCurrentWeather(kota) {
-   return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${kota}&units=metric&appid=352de983576aec67aecddb583d2ea374`)
+   return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${kota}&units=metric&appid=API_KEY`)
       .then(response => {
          if (!response.ok) {
             // Menghentikan animasi loading
@@ -105,7 +105,7 @@ function getCurrentWeather(kota) {
 
 // Request One Call API yang merupakan API tempat menyimpan semua data cuaca termasuk haurly dan daily
 function oneCallApi(lat, lon) {
-   fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=352de983576aec67aecddb583d2ea374`)
+   fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=API_KEY`)
       .then(response => response.json())
       .then(data => {
          const dataForecast = data;
